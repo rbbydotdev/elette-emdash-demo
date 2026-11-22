@@ -8,8 +8,8 @@ elette clones this repository into a new project and opens three panes:
 
 | Pane | What it runs |
 |---|---|
-| server | `egg pkg install bun`, `egg create-app emdash site` the first time (emdash's blog on Node), then `bun dev` in `site/` |
-| opencode | `egg pkg install opencode && opencode`: the coding agent, in this project |
+| server | `egg create-app emdash site` the first time (emdash's blog on Node), then `bun dev` in `site/` |
+| opencode | `vault run --optional -- opencode`: the coding agent, with your model keys from the vault when you have one |
 | preview | the site on port 4321 |
 
 The first start makes the site and installs its packages, which takes a few minutes. Edit the site in the editor or ask opencode to; the dev server reloads the preview.
@@ -23,3 +23,5 @@ The panes are files in `.egg/autostart/`, one [XDG autostart](https://specificat
 - A file pane: `X-Eggshell-File=PATH`.
 
 The layout, files, opencode and preview side by side with the terminal below, is `.egg/config.json`: arrange the panes, then Views, Save layout writes it.
+
+The packages the panes use are pinned in `.egg/packages` (`egg pkg pack` writes it): the import installs them before any pane starts.

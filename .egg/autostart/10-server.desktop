@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=server
-Exec=sh -c "egg pkg install bun && { test -d site || egg create-app emdash site; } && cd site && bun dev"
+Exec=sh -c "{ test -d site || egg create-app emdash site; } && cd site && bun dev"
 Terminal=true

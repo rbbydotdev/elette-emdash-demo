@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=opencode
-Exec=sh -c "egg pkg install opencode && opencode"
+Exec=vault run --optional -- opencode
 Terminal=true
