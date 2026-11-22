@@ -1,6 +1,6 @@
 # An emdash site and opencode in a browser tab
 
-An [emdash](https://www.npmjs.com/package/create-emdash) site made with Bun and served by `bun dev`, with opencode beside it, in [elette](https://elette.dev/): a Linux machine in your browser tab. Nothing is installed on your computer.
+An [emdash](https://www.npmjs.com/package/create-emdash) blog from elette's emdash template, served by `bun dev`, with opencode beside it, in [elette](https://elette.dev/): a Linux machine in your browser tab. Nothing is installed on your computer.
 
 **Open it:** https://elette.dev/?import_gh=rbbydotdev/elette-emdash-demo
 
@@ -8,7 +8,7 @@ elette clones this repository into a new project and opens three panes:
 
 | Pane | What it runs |
 |---|---|
-| server | `egg pkg install bun`, `bun create emdash@latest site --yes` the first time, then `bun dev` in `site/` |
+| server | `egg pkg install bun`, `egg create-app emdash site` the first time (emdash's blog on Node), then `bun dev` in `site/` |
 | opencode | `egg pkg install opencode && opencode`: the coding agent, in this project |
 | preview | the site on port 4321 |
 
