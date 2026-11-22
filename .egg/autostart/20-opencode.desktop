@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=opencode
+Exec=sh -c "egg pkg install opencode && opencode"
+Terminal=true

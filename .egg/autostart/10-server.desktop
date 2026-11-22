@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=server
+Exec=sh -c "test -d site || bun create emdash@latest site --yes; cd site && bun dev"
+Terminal=true
