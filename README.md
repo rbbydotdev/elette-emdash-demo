@@ -8,7 +8,7 @@ elette clones this repository into a new project and opens three panes:
 
 | Pane | What it runs |
 |---|---|
-| server | `bun create emdash@latest site --yes` the first time, then `bun dev` in `site/` |
+| server | `egg pkg install bun`, `bun create emdash@latest site --yes` the first time, then `bun dev` in `site/` |
 | opencode | `egg pkg install opencode && opencode`: the coding agent, in this project |
 | preview | the site on port 4321 |
 
